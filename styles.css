@@ -345,6 +345,10 @@
     border: 1px solid black;
     background: var(--black);
   }
+
+  .black-button:hover {
+    cursor: pointer;
+  }
   
   .red-pill-button {
     position: absolute;
