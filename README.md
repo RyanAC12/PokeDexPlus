@@ -17,7 +17,7 @@ This project is a remake of the Pokédex, a device from the animated series _Pok
 
 ### Technologies Used
 - **JavaScript:** Implemented advanced JavaScript features to create a dynamic user interface that responds to user interactions.
-- **PokeAPI::** Connected the Dex to PokeAPI to fetch reliable and up-to-date information.
+- **PokéAPI:** Connected the Dex to PokeAPI to fetch reliable and up-to-date information.
 - **HTML5:** Focused on semantic HTML for structured and accessible content.
 - **CSS:** Utilized gradients to give the Dex a realistic feel.
 
