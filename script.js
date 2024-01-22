@@ -24,6 +24,7 @@ const getPokemon = (num) => {
         let spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
         if (data.sprites.front_shiny && Math.random() <= 0.005) {
             spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${data.id}.png`;
+            sfx.play();
         }
         imageScreen.src = spriteUrl;
         nameScreen.innerHTML = data.name;
@@ -37,6 +38,14 @@ inputField.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         searchbutton.click();
     }
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let sfx = document.getElementById('pokesfx');
+
+    searchbutton.addEventListener('click', function () {
+        sfx.play();
+    });
 });
 
 searchbutton.addEventListener("click", () => getPokemon(inputField.value));
