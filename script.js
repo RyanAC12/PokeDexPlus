@@ -22,7 +22,7 @@ const getPokemon = (num) => {
     .then((res) => res.json())
     .then((data) => {
         let spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`;
-        if (data.sprites.front_shiny && Math.random() <= 0.005) {
+        if (data.sprites.front_shiny && Math.random() <= 0.05) {
             spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${data.id}.png`;
             sfx.play();
         }
